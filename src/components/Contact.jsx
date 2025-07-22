@@ -22,7 +22,7 @@ const Contact = () => {
           </h2>
           
           <p className="text-body max-w-2xl mx-auto">
-            Entre em contato para agendar uma consulta ou tirar suas dúvidas.
+            Entre em contato para orientação jurídica ou esclarecimentos.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ const Contact = () => {
               
               <div className="space-y-6">
                 {/* Agendamento Online */}
-                <Card className="border-primary/20">
+                <Card className="border-primary/20 glass-effect">
                   <CardContent className="p-6">
                     <div className="text-center space-y-4">
                       <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
@@ -101,7 +101,7 @@ const Contact = () => {
                           Agendamento Online
                         </h4>
                         <p className="text-muted-foreground mb-4">
-                          Marque sua consulta diretamente pelo calendário online. 
+                          Marque sua consulta jurídica diretamente pelo calendário online. 
                           Rápido, seguro e confortável.
                         </p>
                         <AppointmentScheduler />
@@ -111,7 +111,7 @@ const Contact = () => {
                 </Card>
 
                 {/* WhatsApp */}
-                <Card className="border-green-200">
+                <Card className="border-green-200 glass-effect">
                   <CardContent className="p-6">
                     <div className="text-center space-y-4">
                       <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
@@ -126,10 +126,10 @@ const Contact = () => {
                         </p>
                         <Button 
                           className="w-full bg-green-600 hover:bg-green-700 text-white"
-                          onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de falar com a Tia Jow.', '_blank')}
+                          onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de falar com o Dr. Maurício Hermann Hermann.', '_blank')}
                         >
                           <MessageCircle className="w-4 h-4 mr-2" />
-                          Falar com a Tia Jow
+                          Falar com o Dr. Maurício Hermann
                         </Button>
                       </div>
                     </div>
@@ -137,7 +137,7 @@ const Contact = () => {
                 </Card>
 
                 {/* Instagram */}
-                <Card className="border-pink-200">
+                <Card className="border-pink-200 glass-effect">
                   <CardContent className="p-6">
                     <div className="text-center space-y-4">
                       <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto">
@@ -148,7 +148,7 @@ const Contact = () => {
                           Instagram
                         </h4>
                         <p className="text-muted-foreground mb-4">
-                          Siga a Tia Jow no Instagram para dicas e novidades.
+                          Siga o Dr. Maurício Hermann no Instagram para dicas jurídicas e novidades.
                         </p>
                         <Button 
                           variant="outline"
@@ -169,22 +169,22 @@ const Contact = () => {
 
         {/* CTA Section */}
         <div className="mt-16 text-center">
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <div className="glass-effect rounded-2xl p-8 shadow-sm">
             <h3 className="text-xl font-semibold text-foreground mb-4">
-              Pronto para cuidar da respiração do seu filho?
+              Pronto para resolver sua questão jurídica?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Agende agora mesmo uma consulta com a Tia Jow e veja como o cuidado humanizado pode 
-              fazer toda a diferença na saúde respiratória do seu pequeno.
+              Agende agora mesmo uma consulta com o Dr. Maurício Hermann Hermann e veja como a 
+              advocacia especializada pode fazer toda a diferença no seu caso.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <AppointmentScheduler />
               <Button 
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de mais informações sobre a consulta.', '_blank')}
+                onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de mais informações sobre a consulta jurídica.', '_blank')}
               >
-                Falar com a Tia Jow
+                Falar com o Dr. Maurício Hermann
               </Button>
             </div>
           </div>

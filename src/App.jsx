@@ -8,8 +8,8 @@ import { SuspenseWrapper } from './components/ui/suspense-wrapper.jsx'
 
 // Lazy loading para componentes menos críticos
 const About = lazy(() => import('./components/About.jsx'))
+const Areas = lazy(() => import('./components/Areas.jsx'))
 const Videos = lazy(() => import('./components/Videos.jsx'))
-const Courses = lazy(() => import('./components/Courses.jsx'))
 const Testimonials = lazy(() => import('./components/Testimonials.jsx'))
 const FAQ = lazy(() => import('./components/FAQ.jsx'))
 const Contact = lazy(() => import('./components/Contact.jsx'))
@@ -25,10 +25,10 @@ function App() {
           <About />
         </SuspenseWrapper>
         <SuspenseWrapper>
-          <Videos />
+          <Areas />
         </SuspenseWrapper>
         <SuspenseWrapper>
-          <Courses />
+          <Videos />
         </SuspenseWrapper>
         <SuspenseWrapper>
           <Testimonials />

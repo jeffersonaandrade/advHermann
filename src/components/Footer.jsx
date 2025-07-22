@@ -14,29 +14,28 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-foreground text-white">
+    <footer className="bg-card text-foreground border-t border-border">
       <div className="container mx-auto section-padding">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <Logo size="lg" variant="full" className="text-white" />
+            <Logo size="xl" variant="full" showText={true} />
             
-            <p className="text-white/70 text-sm leading-relaxed">
-              Fisioterapia respiratória infantil com atendimento domiciliar 
-              personalizado e humanizado. Mais de 10 anos cuidando da respiração 
-              dos pequenos com atenção e carinho.
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Advocacia especializada em direito civil, trabalhista e empresarial. 
+              Assessoria jurídica profissional para pessoas físicas e jurídicas.
             </p>
           </div>
 
           {/* Links Rápidos */}
           <div className="space-y-6">
-            <h3 className="text-lg font-semibold">Links Rápidos</h3>
+            <h3 className="text-lg font-semibold">Navegação</h3>
             <nav className="space-y-3">
               {siteConfig.navigation.map((link) => (
                 <button
                   key={link.label}
                   onClick={() => handleNavigation(link.href)}
-                  className="block text-white/70 hover:text-white transition-colors text-sm"
+                  className="block text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
                   {link.label}
                 </button>
@@ -53,7 +52,7 @@ const Footer = () => {
                 <MessageCircle className="w-5 h-5 text-primary" />
                 <div>
                   <p className="text-sm font-medium">WhatsApp</p>
-                  <p className="text-white/70 text-sm">{siteConfig.contact.whatsappFormatted}</p>
+                  <p className="text-muted-foreground text-sm">{siteConfig.contact.whatsappFormatted}</p>
                 </div>
               </div>
               
@@ -61,67 +60,55 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-primary" />
                 <div>
                   <p className="text-sm font-medium">Instagram</p>
-                  <p className="text-white/70 text-sm">{siteConfig.contact.instagram}</p>
+                  <p className="text-muted-foreground text-sm">{siteConfig.contact.instagram}</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
                 <div>
-                  <p className="text-sm font-medium">Atendimento</p>
-                  <p className="text-white/70 text-sm">Domiciliar - {siteConfig.contact.address}</p>
+                  <p className="text-sm font-medium">Escritório</p>
+                  <p className="text-muted-foreground text-sm">{siteConfig.contact.address}</p>
                 </div>
               </div>
             </div>
 
-            {/* Redes Sociais */}
+            {/* Horários */}
             <div className="space-y-3">
-              <p className="text-sm font-medium">Siga nas redes sociais</p>
-              <div className="flex space-x-3">
-                <button
-                  onClick={() => handleContactAction('instagram')}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
-                  aria-label="Seguir no Instagram"
-                >
-                  <Instagram className="w-5 h-5" />
-                </button>
-                <button
-                  onClick={() => window.open('https://calendly.com/ronaldocinebox1/30min', '_blank')}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
-                  aria-label="Agendar consulta pelo Calendly"
-                >
-                  <Calendar className="w-5 h-5" />
-                </button>
+              <div className="flex items-center space-x-3">
+                <Clock className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="text-sm font-medium">Horários</p>
+                  <p className="text-muted-foreground text-sm">{siteConfig.contact.schedule}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-white/20 mt-12 pt-8">
+        {/* Aviso Legal */}
+        <div className="border-t border-border mt-12 pt-8">
+          <div className="text-center mb-6">
+            <p className="text-muted-foreground text-xs max-w-4xl mx-auto">
+              Este site segue as normas éticas da OAB e não constitui propaganda ou captação de clientela. 
+              As informações são de caráter educativo e informativo. Para orientação jurídica específica, consulte um advogado.
+            </p>
+          </div>
+          
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-white/70 text-sm">
-              © {currentYear} Respirar - Cuidado Respiratório por Joanna Bomfim. Todos os direitos reservados.
+            <div className="text-muted-foreground text-sm">
+              © {currentYear} Dr. Maurício Hermann - Advocacia Especializada. Todos os direitos reservados.
             </div>
             
-            <div className="flex items-center space-x-6 text-white/70 text-sm">
-                <div className="space-y-2 text-sm">
-                  <div className="flex items-center space-x-2">
-                    <Clock className="w-4 h-4 text-primary" />
-                    <span>{siteConfig.consultation.duration}</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <MapPin className="w-4 h-4 text-primary" />
-                    <span>{siteConfig.consultation.area}</span>
-                  </div>
-                </div>
+            <div className="text-muted-foreground text-sm">
+              Recife, PE - Brasil
             </div>
           </div>
           
           {/* Crédito do Criador */}
-          <div className="border-t border-white/10 mt-6 pt-6">
-            <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-white/60 text-xs">
-              <span>© {currentYear} Desenvolvimento do site - Todos os direitos reservados a</span>
+          <div className="border-t border-border mt-6 pt-6">
+            <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-muted-foreground text-xs">
+              <span>Desenvolvimento do site - Todos os direitos reservados a</span>
               <a 
                 href="https://www.instagram.com/jeffersonaandrade10/" 
                 target="_blank" 

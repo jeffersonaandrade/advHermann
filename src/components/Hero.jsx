@@ -1,10 +1,10 @@
-import { ArrowRight, Play, Shield, Heart, Users, Star } from 'lucide-react';
+import { ArrowRight, Play, Shield, Scale, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button.jsx';
 import { siteConfig } from '@/config/site.js';
 import { useWhatsApp } from '@/hooks/use-whatsapp.js';
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer.js';
 import AppointmentScheduler from './AppointmentScheduler.jsx';
-import joannaPhoto from '@/assets/DSC04353.jpg';
+import mauricioPhoto from '@/assets/foto-tratada.jpeg';
 
 const Hero = () => {
   const { handleContactAction } = useWhatsApp();
@@ -28,20 +28,20 @@ const Hero = () => {
               }`}
             >
               <div className="flex items-center justify-center lg:justify-start space-x-2 text-primary mb-4">
-                <Shield className="w-5 h-5" />
+                <Scale className="w-5 h-5" />
                 <span className="text-sm font-medium uppercase tracking-wide">
-                  Fisioterapia Respiratória Infantil
+                  Advocacia Especializada
                 </span>
               </div>
               
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                Respire com{' '}
-                <span className="text-primary">tranquilidade</span>
+                Advocacia{' '}
+                <span className="text-primary">Especializada</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto lg:mx-0 leading-relaxed">
-                Cuidado humanizado e especializado em fisioterapia respiratória infantil. 
-                A Tia Jow cuida da respiração do seu filho com amor e profissionalismo.
+                Advocacia especializada em direito civil, trabalhista e empresarial. 
+                Dr. Maurício Hermann oferece assessoria jurídica profissional.
               </p>
             </div>
 
@@ -65,41 +65,23 @@ const Hero = () => {
                 className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-semibold"
                 onClick={() => handleContactAction('whatsapp', 'hero')}
               >
-                <Heart className="w-5 h-5 mr-2" />
-                Falar com a Tia Jow
+                <Shield className="w-5 h-5 mr-2" />
+                Falar com o Dr. Maurício Hermann
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 max-w-md mx-auto lg:mx-0 pt-12">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">{siteConfig.stats.experience}</div>
-                <div className="text-sm text-muted-foreground">Anos de Experiência</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">{siteConfig.stats.followers}</div>
-                <div className="text-sm text-muted-foreground">Seguidores</div>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-accent text-accent" />
-                  ))}
-                </div>
-                <div className="text-sm text-muted-foreground">Avaliação</div>
-              </div>
-            </div>
+
           </div>
 
-          {/* Imagem da Tia Jow */}
+          {/* Imagem do Dr. Maurício Hermann */}
           <div className="relative animate-fade-in hidden lg:block">
             <div className="relative">
-              {/* Foto da Joanna */}
+              {/* Foto do Maurício */}
               <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20">
                 <img 
-                  src={joannaPhoto} 
-                  alt="Joanna Bomfim - Fisioterapeuta Respiratória Infantil"
+                  src={mauricioPhoto} 
+                  alt="Dr. Maurício Hermann Hermann - Advogado Especializado"
                   className="w-full h-full object-cover"
                   loading="eager"
                 />

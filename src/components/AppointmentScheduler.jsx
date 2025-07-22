@@ -47,8 +47,8 @@ const AppointmentScheduler = () => {
     },
     {
       icon: MapPin,
-      title: 'Atendimento Domiciliar',
-      description: 'No conforto da sua casa'
+      title: 'Atendimento Presencial e Online',
+      description: 'No escritório ou via videoconferência'
     },
     {
       icon: CheckCircle,
@@ -67,7 +67,7 @@ const AppointmentScheduler = () => {
         type="button"
       >
         <Calendar className="w-5 h-5 mr-2" />
-        Agendar Consulta
+        Agendar Orientação
         <ArrowRight className="w-4 h-4 ml-2" />
       </Button>
 
@@ -81,7 +81,7 @@ const AppointmentScheduler = () => {
                 <div>
                   <h2 className="text-2xl font-bold">Agendar Consulta</h2>
                   <p className="text-white/90 mt-1">
-                    Escolha o melhor horário para sua consulta
+                    Escolha o melhor horário para sua orientação jurídica
                   </p>
                 </div>
                 <Button
@@ -163,7 +163,7 @@ const AppointmentScheduler = () => {
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                         <div>
                           <p className="font-medium text-foreground">Local</p>
-                          <p className="text-muted-foreground">Atendimento domiciliar</p>
+                          <p className="text-muted-foreground">Escritório ou online</p>
                         </div>
                       </div>
                       
@@ -179,7 +179,7 @@ const AppointmentScheduler = () => {
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                         <div>
                           <p className="font-medium text-foreground">Horários</p>
-                          <p className="text-muted-foreground">Segunda a Sexta, 8h às 18h</p>
+                          <p className="text-muted-foreground">Segunda a Sexta, 9h às 18h</p>
                         </div>
                       </div>
                     </div>
@@ -212,14 +212,14 @@ const AppointmentScheduler = () => {
                   {/* CTA */}
                   <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-4">
                     <p className="text-sm text-muted-foreground mb-3">
-                      Prefere falar com a Tia Jow primeiro?
+                      Prefere falar com o Dr. Maurício Hermann primeiro?
                     </p>
                     <Button 
                       variant="outline" 
                       className="w-full border-primary text-primary hover:bg-primary hover:text-white"
-                      onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de falar com a Tia Jow.', '_blank')}
+                      onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de falar com o Dr. Maurício Hermann Hermann.', '_blank')}
                     >
-                      Falar com a Tia Jow
+                      Falar com o Dr. Maurício Hermann
                     </Button>
                   </div>
                 </div>

@@ -1,31 +1,27 @@
 const faqData = [
   {
-    question: 'Como funciona o atendimento domiciliar?',
-    answer: 'O atendimento é realizado no conforto da sua casa, respeitando o ambiente familiar da criança. Cada consulta é personalizada, sem pressa ou imposições. A Tia Jow adapta as técnicas ao ritmo, medo, cansaço e jeitinho único de cada criança. O ambiente acolhedor e o vínculo de confiança são fundamentais para o sucesso do tratamento.'
+    question: 'Como funciona a orientação jurídica inicial?',
+    answer: 'A orientação jurídica inicial tem duração de 30 minutos. Neste encontro, o Dr. Maurício Hermann analisa seu caso, explica as possíveis estratégias jurídicas e esclarece suas dúvidas. É o momento ideal para você conhecer o profissional e entender como pode ser ajudado.'
   },
   {
-    question: 'Quanto custa o atendimento?',
-    answer: 'O valor da consulta é R$ 280,00. Este valor inclui a avaliação completa, o atendimento personalizado no domicílio, orientações para os pais e o acompanhamento necessário. O investimento na saúde respiratória do seu filho é um cuidado que traz resultados duradouros.'
+    question: 'Como agendar uma orientação jurídica?',
+    answer: 'Para agendar uma orientação jurídica, você pode usar o botão "Agendar Orientação" no site, que direciona para o Calendly, ou entrar em contato diretamente pelo WhatsApp. O Dr. Maurício Hermann atende de segunda a sexta, das 9h às 18h, tanto presencialmente quanto online.'
   },
   {
-    question: 'Como agendar uma consulta?',
-    answer: 'Para agendar uma consulta, entre em contato pelo WhatsApp clicando no botão flutuante do site ou nos botões "Agendar Consulta". A Tia Jow irá conversar com você sobre as necessidades do seu filho e agendar o melhor horário para a visita domiciliar.'
+    question: 'Quais áreas do direito o Dr. Maurício Hermann atua?',
+    answer: 'O Dr. Maurício Hermann é especializado em Direito Civil, Trabalhista e Empresarial. Também atua em Direito Previdenciário, Tributário e Administrativo, oferecendo assessoria jurídica profissional nessas áreas.'
   },
   {
-    question: 'Quais são os benefícios da fisioterapia respiratória?',
-    answer: 'A fisioterapia respiratória ajuda a eliminar secreções, melhora a capacidade respiratória, previne complicações, reduz a frequência de infecções respiratórias e melhora a qualidade de vida da criança. É especialmente eficaz para crianças com problemas respiratórios recorrentes.'
+    question: 'O escritório atende apenas em Recife?',
+    answer: 'O escritório está localizado em Recife, mas atendemos clientes de toda a região metropolitana. Para casos específicos, também oferecemos atendimento online, permitindo que clientes de outras localidades tenham acesso aos nossos serviços.'
   },
   {
-    question: 'É necessário algum preparo antes da consulta?',
-    answer: 'Não é necessário preparo especial. Apenas mantenha o ambiente tranquilo e confortável para a criança. A Tia Jow irá orientar sobre qualquer cuidado específico durante a primeira consulta, se necessário.'
+    question: 'Como funciona o acompanhamento de um processo?',
+    answer: 'O acompanhamento varia de acordo com a complexidade do caso e a área do direito. O Dr. Maurício Hermann sempre mantém o cliente informado sobre o andamento do processo, oferecendo transparência total.'
   },
   {
-    question: 'A partir de que idade posso buscar atendimento?',
-    answer: 'A fisioterapia respiratória pode ser realizada em crianças de todas as idades, desde recém-nascidos até adolescentes. A abordagem é adaptada de acordo com a idade e desenvolvimento da criança.'
-  },
-  {
-    question: 'Quantas sessões são necessárias?',
-    answer: 'O número de sessões varia de acordo com a condição da criança e a evolução do tratamento. A Tia Jow fará uma avaliação inicial e definirá um plano de tratamento personalizado, sempre priorizando o bem-estar da criança.'
+    question: 'O Dr. Maurício Hermann oferece assessoria para empresas?',
+    answer: 'Sim! O Dr. Maurício Hermann oferece assessoria jurídica completa para empresas, incluindo constituição, elaboração de contratos, compliance trabalhista, questões tributárias e muito mais. A assessoria pode ser pontual ou contínua, conforme a necessidade da empresa.'
   }
 ];
 

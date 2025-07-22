@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { cn } from '@/lib/utils.js';
-import logoImage from '@/assets/logo.png';
+import logoImage from '@/assets/logo-adv.png';
 
 const Logo = memo(({ 
   size = 'md', 
@@ -29,7 +29,7 @@ const Logo = memo(({
   const LogoIcon = () => (
     <img 
       src={logoImage}
-      alt="Respirar - Logo da marca"
+      alt="Dr. Maurício Hermann - Advogado"
       className={cn(sizeClasses[size], 'object-contain', className)}
     />
   );
@@ -44,15 +44,15 @@ const Logo = memo(({
       {showText && (
         <div className="flex flex-col">
           <span className={cn('font-bold text-foreground', textSizes[size])}>
-            RESPIRAR
+            Dr. Maurício Hermann Hermann
           </span>
           {variant === 'full' && (
             <>
               <span className={cn('text-muted-foreground font-normal', textSizes[size === 'xs' ? 'xs' : 'sm'])}>
-                - Cuidado Respiratório -
+                - Advocacia Especializada -
               </span>
               <span className={cn('text-muted-foreground italic', textSizes[size === 'xs' ? 'xs' : 'sm'])}>
-                Por Joanna Bomfim
+                Direito Civil • Trabalhista • Empresarial
               </span>
             </>
           )}

@@ -16,19 +16,16 @@ const Header = memo(() => {
   };
 
   const handleScheduleClick = () => {
-    window.open('https://calendly.com/ronaldocinebox1/30min', '_blank');
+    window.open('https://calendly.com/mauriciohermann/30min', '_blank');
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-border">
       <div className="container mx-auto px-3 sm:px-4 md:px-8 lg:px-16">
         <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Logo size="sm" variant="icon" />
-            <span className="text-lg sm:text-xl font-bold text-foreground">
-              RESPIRAR
-            </span>
+          <div className="flex items-center">
+            <Logo size="lg" variant="icon" />
           </div>
 
           {/* Menu Desktop */}
@@ -51,7 +48,7 @@ const Header = memo(() => {
               size="sm"
               className="gradient-primary text-white hover:opacity-90 transition-opacity text-sm"
               onClick={handleScheduleClick}
-              aria-label="Agendar consulta pelo WhatsApp"
+              aria-label="Agendar consulta jurídica"
             >
               Agendar Consulta
             </Button>
@@ -74,7 +71,7 @@ const Header = memo(() => {
 
         {/* Menu Mobile */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-14 sm:top-16 left-0 right-0 bg-white border-b border-border shadow-lg">
+          <div className="md:hidden absolute top-14 sm:top-16 left-0 right-0 glass-effect border-b border-border shadow-lg">
             <nav className="flex flex-col py-2 sm:py-4" role="navigation" aria-label="Menu principal">
               {siteConfig.navigation.map((item) => (
                 <button
@@ -94,7 +91,7 @@ const Header = memo(() => {
                     handleScheduleClick();
                     setIsMenuOpen(false);
                   }}
-                  aria-label="Agendar consulta pelo WhatsApp"
+                  aria-label="Agendar consulta jurídica"
                 >
                   Agendar Consulta
                 </Button>

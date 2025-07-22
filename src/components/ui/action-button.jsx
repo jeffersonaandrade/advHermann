@@ -76,6 +76,12 @@ const ActionButton = memo(({
     
     const iconElement = <Icon className="w-4 h-4" />;
     
+    // Se não há children (texto), centraliza o ícone
+    if (!children) {
+      return iconElement;
+    }
+    
+    // Se há texto, aplica as margens normalmente
     if (iconPosition === "right") {
       return <span className="ml-2">{iconElement}</span>;
     }
@@ -87,7 +93,7 @@ const ActionButton = memo(({
     <Button
       variant={variant}
       size={size}
-      className={className}
+      className={`${className} ${!children ? 'justify-center' : ''}`}
       onClick={handleClick}
       onTouchStart={(e) => e.preventDefault()}
       style={{ 

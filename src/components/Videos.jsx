@@ -1,11 +1,8 @@
-import { Play, Clock, Eye, Instagram, Heart, Shield, AlertTriangle, Activity, Home } from 'lucide-react';
+import { Play, Clock, Eye, Instagram, Scale, Shield, AlertTriangle, FileText, Building } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card.jsx';
 import { Button } from '@/components/ui/button.jsx';
 import { useWhatsApp } from '@/hooks/use-whatsapp.js';
-import videoThumbnail from '@/assets/DSC04485.jpg';
-import fogueiraImage from '@/assets/fogueira.jpg';
-import preventionImage from '@/assets/DSC04353.jpg';
-import emergencyImage from '@/assets/foto-tratada.jpeg';
+import logoImage from '@/assets/logo-adv.png';
 
 const Videos = () => {
   const { handleContactAction } = useWhatsApp();
@@ -13,50 +10,51 @@ const Videos = () => {
   const videos = [
     {
       id: 1,
-      title: 'Você confiaria a saúde do seu filho a alguém que você nunca viu?',
-      description: 'Dicas importantes sobre como escolher um profissional de confiança para cuidar da respiração do seu filho. A Tia Jow explica os critérios essenciais.',
-      duration: '2:30',
-      views: '1.2k',
-      thumbnail: 'gradient-primary',
-      instagramUrl: 'https://www.instagram.com/p/DMIGXRwuplp/',
+      title: 'Como escolher um advogado de confiança para seu caso?',
+      description: 'Dicas importantes sobre como escolher um profissional de confiança para defender seus direitos. Dr. Maurício Hermann explica os critérios essenciais.',
+      duration: '3:15',
+      views: '1.5k',
+      thumbnail: 'gradient-soft',
+      instagramUrl: 'https://www.instagram.com/p/mauriciohermann.adv/',
       isRealVideo: true,
-      customThumbnail: true
+      customThumbnail: true,
+      thumbnailType: 'default'
     },
     {
       id: 2,
-      title: 'Fumaça e cheiros fortes - Como proteger seu pequeno',
-      description: 'Orientações práticas para proteger crianças de irritantes respiratórios no ambiente doméstico. Dicas da Tia Jow para um ambiente mais saudável.',
-      duration: '3:15',
-      views: '890',
+      title: 'Direitos trabalhistas que você precisa conhecer',
+      description: 'Orientações práticas sobre seus direitos como trabalhador. Conheça as principais garantias trabalhistas e como defendê-las.',
+      duration: '4:20',
+      views: '2.1k',
       thumbnail: 'gradient-soft',
-      instagramUrl: 'https://www.instagram.com/p/DLKU9thOALH/',
+      instagramUrl: 'https://www.instagram.com/p/mauriciohermann.adv/',
       isRealVideo: true,
       customThumbnail: true,
-      thumbnailType: 'smoke'
+      thumbnailType: 'labor'
     },
     {
       id: 3,
-      title: 'Sua criança está sempre com virose? Prevenção é o verdadeiro cuidado',
-      description: 'A fisioterapia respiratória preventiva atua antes da doença chegar com força. Ajuda a eliminar secreções, impede que a gripe desça para o pulmão e fortalece a imunidade.',
-      duration: '4:20',
-      views: '2.1k',
-      thumbnail: 'gradient-primary',
-      instagramUrl: 'https://www.instagram.com/p/DKxsxGFOSxr/',
+      title: 'Contratos: o que você deve verificar antes de assinar',
+      description: 'Dicas essenciais para analisar contratos antes de assiná-los. Evite armadilhas e proteja seus interesses com orientação jurídica adequada.',
+      duration: '5:30',
+      views: '1.8k',
+      thumbnail: 'gradient-soft',
+      instagramUrl: 'https://www.instagram.com/p/mauriciohermann.adv/',
       isRealVideo: true,
       customThumbnail: true,
-      thumbnailType: 'prevention'
+      thumbnailType: 'contract'
     },
     {
       id: 4,
-      title: 'Crise respiratória de madrugada: você saberia o que fazer?',
-      description: 'Muitos pais não sabem e entram em pânico. Mas a fisioterapia respiratória pode ser decisiva. Atendimentos domiciliares existem para agir rápido, evitar agravamentos e tratar a criança num ambiente acolhedor.',
-      duration: '3:45',
-      views: '1.5k',
+      title: 'Direito empresarial: constituindo sua empresa com segurança',
+      description: 'Orientações sobre como constituir uma empresa de forma segura e dentro da lei. Planejamento jurídico para o sucesso do seu negócio.',
+      duration: '4:45',
+      views: '1.2k',
       thumbnail: 'gradient-soft',
-      instagramUrl: 'https://www.instagram.com/p/DMNiWA0tmri/',
+      instagramUrl: 'https://www.instagram.com/p/mauriciohermann.adv/',
       isRealVideo: true,
       customThumbnail: true,
-      thumbnailType: 'emergency'
+      thumbnailType: 'business'
     }
   ];
 
@@ -70,38 +68,28 @@ const Videos = () => {
   };
 
   const renderCustomThumbnail = (video) => {
-    if (video.thumbnailType === 'smoke') {
+    if (video.thumbnailType === 'labor') {
       return (
         <div className="aspect-video rounded-t-lg relative overflow-hidden">
-          {/* Background Image - Fogueira */}
+          {/* Background with Logo */}
           <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${fogueiraImage})` }}
+            className="absolute inset-0"
+            style={{ backgroundImage: `url(${logoImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
           >
-            {/* Overlay para melhorar legibilidade */}
-            <div className="absolute inset-0 bg-black/50"></div>
+            {/* Overlay sutil para melhorar legibilidade */}
+            <div className="absolute inset-0 bg-black/20"></div>
           </div>
           
           {/* Main Content */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center space-y-4 p-6">
-              {/* Icon Container */}
-              <div className="relative">
-                <div className="w-20 h-20 bg-white/95 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                  <AlertTriangle className="w-10 h-10 text-orange-500" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-red-400 to-orange-500 rounded-full flex items-center justify-center">
-                  <Shield className="w-4 h-4 text-white" />
-                </div>
-              </div>
-              
               {/* Text Content */}
               <div className="space-y-2">
                 <h4 className="text-white font-bold text-lg leading-tight drop-shadow-lg">
-                  Proteção Respiratória
+                  Direitos Trabalhistas
                 </h4>
                 <p className="text-white/95 text-sm font-medium drop-shadow-md">
-                  Fumaça e cheiros fortes
+                  Conheça seus direitos
                 </p>
               </div>
             </div>
@@ -109,89 +97,7 @@ const Videos = () => {
 
           {/* Overlay on Hover */}
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <div className="w-16 h-16 bg-white/95 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Instagram className="w-8 h-8 text-primary" />
-            </div>
-          </div>
-          
-          {/* Video Info Overlay */}
-          <div className="absolute bottom-4 left-4 right-4">
-            <div className="flex items-center justify-between text-white text-sm">
-              <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
-                <Clock className="w-4 h-4" />
-                <span className="font-medium">3:15</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
-                <Eye className="w-4 h-4" />
-                <span className="font-medium">890</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Badge para vídeo real */}
-          <div className="absolute top-4 right-4">
-            <div className="bg-white/95 text-primary text-xs font-bold px-3 py-1.5 rounded-full flex items-center space-x-1 shadow-lg">
-              <Instagram className="w-3 h-3" />
-              <span>Instagram</span>
-            </div>
-          </div>
-
-          {/* Decorative Elements */}
-          <div className="absolute top-4 left-4">
-            <div className="w-3 h-3 bg-white/60 rounded-full shadow-sm"></div>
-          </div>
-          <div className="absolute bottom-8 left-6">
-            <div className="w-2 h-2 bg-white/50 rounded-full shadow-sm"></div>
-          </div>
-          <div className="absolute top-6 right-6">
-            <div className="w-1.5 h-1.5 bg-white/70 rounded-full shadow-sm"></div>
-          </div>
-        </div>
-      );
-    }
-
-    if (video.thumbnailType === 'prevention') {
-      return (
-        <div className="aspect-video rounded-t-lg relative overflow-hidden">
-          {/* Background Image - DSC04353.jpg */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${preventionImage})` }}
-          >
-            {/* Overlay para melhorar legibilidade */}
-            <div className="absolute inset-0 bg-black/40"></div>
-          </div>
-          
-          {/* Main Content */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center space-y-4 p-6">
-              {/* Icon Container */}
-              <div className="relative">
-                <div className="w-20 h-20 bg-white/95 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                  <Activity className="w-10 h-10 text-green-500" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
-                  <Shield className="w-4 h-4 text-white" />
-                </div>
-              </div>
-              
-              {/* Text Content */}
-              <div className="space-y-2">
-                <h4 className="text-white font-bold text-lg leading-tight drop-shadow-lg">
-                  Prevenção é Proteção
-                </h4>
-                <p className="text-white/95 text-sm font-medium drop-shadow-md">
-                  Fisioterapia preventiva
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Overlay on Hover */}
-          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <div className="w-16 h-16 bg-white/95 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Instagram className="w-8 h-8 text-primary" />
-            </div>
+            <Instagram className="w-12 h-12 text-white" />
           </div>
           
           {/* Video Info Overlay */}
@@ -230,38 +136,28 @@ const Videos = () => {
       );
     }
 
-    if (video.thumbnailType === 'emergency') {
+    if (video.thumbnailType === 'contract') {
       return (
         <div className="aspect-video rounded-t-lg relative overflow-hidden">
-          {/* Background Image - foto-tratada.jpeg */}
+          {/* Background with Logo */}
           <div 
-            className="absolute inset-0 bg-cover bg-top"
-            style={{ backgroundImage: `url(${emergencyImage})` }}
+            className="absolute inset-0"
+            style={{ backgroundImage: `url(${logoImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
           >
-            {/* Overlay para melhorar legibilidade */}
-            <div className="absolute inset-0 bg-black/50"></div>
+            {/* Overlay sutil para melhorar legibilidade */}
+            <div className="absolute inset-0 bg-black/20"></div>
           </div>
           
           {/* Main Content */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center space-y-4 p-6">
-              {/* Icon Container */}
-              <div className="relative">
-                <div className="w-20 h-20 bg-white/95 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                  <Home className="w-10 h-10 text-red-500" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-red-400 to-orange-500 rounded-full flex items-center justify-center">
-                  <Shield className="w-4 h-4 text-white" />
-                </div>
-              </div>
-              
               {/* Text Content */}
               <div className="space-y-2">
                 <h4 className="text-white font-bold text-lg leading-tight drop-shadow-lg">
-                  Emergência Respiratória
+                  Análise de Contratos
                 </h4>
                 <p className="text-white/95 text-sm font-medium drop-shadow-md">
-                  Atendimento domiciliar
+                  Proteja seus interesses
                 </p>
               </div>
             </div>
@@ -269,9 +165,7 @@ const Videos = () => {
 
           {/* Overlay on Hover */}
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <div className="w-16 h-16 bg-white/95 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Instagram className="w-8 h-8 text-primary" />
-            </div>
+            <Instagram className="w-12 h-12 text-white" />
           </div>
           
           {/* Video Info Overlay */}
@@ -279,7 +173,143 @@ const Videos = () => {
             <div className="flex items-center justify-between text-white text-sm">
               <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
                 <Clock className="w-4 h-4" />
-                <span className="font-medium">3:45</span>
+                <span className="font-medium">5:30</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
+                <Eye className="w-4 h-4" />
+                <span className="font-medium">1.8k</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Badge para vídeo real */}
+          <div className="absolute top-4 right-4">
+            <div className="bg-white/95 text-primary text-xs font-bold px-3 py-1.5 rounded-full flex items-center space-x-1 shadow-lg">
+              <Instagram className="w-3 h-3" />
+              <span>Instagram</span>
+            </div>
+          </div>
+
+          {/* Decorative Elements */}
+          <div className="absolute top-4 left-4">
+            <div className="w-3 h-3 bg-white/60 rounded-full shadow-sm"></div>
+          </div>
+          <div className="absolute bottom-8 left-6">
+            <div className="w-2 h-2 bg-white/50 rounded-full shadow-sm"></div>
+          </div>
+          <div className="absolute top-6 right-6">
+            <div className="w-1.5 h-1.5 bg-white/70 rounded-full shadow-sm"></div>
+          </div>
+        </div>
+      );
+    }
+
+    if (video.thumbnailType === 'business') {
+      return (
+        <div className="aspect-video rounded-t-lg relative overflow-hidden">
+          {/* Background with Logo */}
+          <div 
+            className="absolute inset-0"
+            style={{ backgroundImage: `url(${logoImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
+            {/* Overlay sutil para melhorar legibilidade */}
+            <div className="absolute inset-0 bg-black/20"></div>
+          </div>
+          
+          {/* Main Content */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center space-y-4 p-6">
+              {/* Text Content */}
+              <div className="space-y-2">
+                <h4 className="text-white font-bold text-lg leading-tight drop-shadow-lg">
+                  Direito Empresarial
+                </h4>
+                <p className="text-white/95 text-sm font-medium drop-shadow-md">
+                  Constituição de empresas
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Overlay on Hover */}
+          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <Instagram className="w-12 h-12 text-white" />
+          </div>
+          
+          {/* Video Info Overlay */}
+          <div className="absolute bottom-4 left-4 right-4">
+            <div className="flex items-center justify-between text-white text-sm">
+              <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
+                <Clock className="w-4 h-4" />
+                <span className="font-medium">4:45</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
+                <Eye className="w-4 h-4" />
+                <span className="font-medium">1.2k</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Badge para vídeo real */}
+          <div className="absolute top-4 right-4">
+            <div className="bg-white/95 text-primary text-xs font-bold px-3 py-1.5 rounded-full flex items-center space-x-1 shadow-lg">
+              <Instagram className="w-3 h-3" />
+              <span>Instagram</span>
+            </div>
+          </div>
+
+          {/* Decorative Elements */}
+          <div className="absolute top-4 left-4">
+            <div className="w-3 h-3 bg-white/60 rounded-full shadow-sm"></div>
+          </div>
+          <div className="absolute bottom-8 left-6">
+            <div className="w-2 h-2 bg-white/50 rounded-full shadow-sm"></div>
+          </div>
+          <div className="absolute top-6 right-6">
+            <div className="w-1.5 h-1.5 bg-white/70 rounded-full shadow-sm"></div>
+          </div>
+        </div>
+      );
+    }
+
+    if (video.thumbnailType === 'default') {
+      return (
+        <div className="aspect-video rounded-t-lg relative overflow-hidden">
+          {/* Background with Logo */}
+          <div 
+            className="absolute inset-0"
+            style={{ backgroundImage: `url(${logoImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
+            {/* Overlay sutil para melhorar legibilidade */}
+            <div className="absolute inset-0 bg-black/20"></div>
+          </div>
+          
+          {/* Main Content */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center space-y-4 p-6">
+              {/* Text Content */}
+              <div className="space-y-2">
+                <h4 className="text-white font-bold text-lg leading-tight drop-shadow-lg">
+                  Escolha do Advogado
+                </h4>
+                <p className="text-white/95 text-sm font-medium drop-shadow-md">
+                  Confiança e profissionalismo
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Overlay on Hover */}
+          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <Instagram className="w-12 h-12 text-white" />
+          </div>
+          
+          {/* Video Info Overlay */}
+          <div className="absolute bottom-4 left-4 right-4">
+            <div className="flex items-center justify-between text-white text-sm">
+              <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
+                <Clock className="w-4 h-4" />
+                <span className="font-medium">3:15</span>
               </div>
               <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
                 <Eye className="w-4 h-4" />
@@ -310,38 +340,28 @@ const Videos = () => {
       );
     }
 
-    // Thumbnail padrão (primeiro vídeo)
+    // Thumbnail padrão (fallback)
     return (
       <div className="aspect-video rounded-t-lg relative overflow-hidden">
-        {/* Background Image */}
+        {/* Background with Logo */}
         <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${videoThumbnail})` }}
+          className="absolute inset-0"
+          style={{ backgroundImage: `url(${logoImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-          {/* Overlay para melhorar legibilidade */}
-          <div className="absolute inset-0 bg-black/30"></div>
+          {/* Overlay sutil para melhorar legibilidade */}
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
         
         {/* Main Content */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center space-y-4 p-6">
-            {/* Icon Container */}
-            <div className="relative">
-              <div className="w-20 h-20 bg-white/95 rounded-full flex items-center justify-center mx-auto shadow-lg">
-                <Shield className="w-10 h-10 text-primary" />
-              </div>
-              <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
-                <Heart className="w-4 h-4 text-white" />
-              </div>
-            </div>
-            
             {/* Text Content */}
             <div className="space-y-2">
               <h4 className="text-white font-bold text-lg leading-tight drop-shadow-lg">
-                Confiança na Saúde
+                Escolha do Advogado
               </h4>
               <p className="text-white/95 text-sm font-medium drop-shadow-md">
-                Escolha o profissional certo
+                Confiança e profissionalismo
               </p>
             </div>
           </div>
@@ -349,9 +369,7 @@ const Videos = () => {
 
         {/* Overlay on Hover */}
         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-          <div className="w-16 h-16 bg-white/95 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Instagram className="w-8 h-8 text-primary" />
-          </div>
+          <Instagram className="w-12 h-12 text-white" />
         </div>
         
         {/* Video Info Overlay */}
@@ -359,11 +377,11 @@ const Videos = () => {
           <div className="flex items-center justify-between text-white text-sm">
             <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
               <Clock className="w-4 h-4" />
-              <span className="font-medium">2:30</span>
+              <span className="font-medium">3:15</span>
             </div>
             <div className="flex items-center space-x-2 bg-black/50 px-2 py-1 rounded-full">
               <Eye className="w-4 h-4" />
-              <span className="font-medium">1.2k</span>
+              <span className="font-medium">1.5k</span>
             </div>
           </div>
         </div>
@@ -397,25 +415,25 @@ const Videos = () => {
           <div className="flex items-center justify-center space-x-2 text-primary">
             <Play className="w-5 h-5" />
             <span className="text-sm font-medium uppercase tracking-wide">
-              Dicas em Vídeo
+              Dicas Jurídicas
             </span>
           </div>
           
           <h2 className="heading-secondary">
-            Orientações semanais da{' '}
-            <span className="text-primary">Tia Jow</span>
+            Orientações semanais do{' '}
+            <span className="text-primary">Dr. Maurício Hermann</span>
           </h2>
           
           <p className="text-body max-w-2xl mx-auto">
-            Toda semana, a Joanna compartilha dicas valiosas sobre cuidados respiratórios, 
-            orientações para pais e informações importantes sobre fisioterapia infantil.
+            Toda semana, o Dr. Maurício Hermann compartilha dicas valiosas sobre direitos, 
+            orientações jurídicas e informações importantes sobre as principais áreas do direito.
           </p>
         </div>
 
         {/* Grid de Vídeos */}
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
           {videos.map((video) => (
-            <Card key={video.id} className="group hover:shadow-lg transition-all duration-300 cursor-pointer" onClick={() => handleVideoClick(video)}>
+            <Card key={video.id} className="group hover:shadow-lg transition-all duration-300 cursor-pointer glass-effect" onClick={() => handleVideoClick(video)}>
               <CardContent className="p-0">
                 {/* Thumbnail */}
                 {video.customThumbnail ? (
@@ -469,7 +487,7 @@ const Videos = () => {
                   
                   <div className="flex items-center justify-between pt-2">
                     <span className="text-xs text-muted-foreground">
-                      Publicado por Tia Jow
+                      Publicado por Dr. Maurício Hermann
                     </span>
                     <Button 
                       size="sm" 
@@ -487,18 +505,18 @@ const Videos = () => {
 
         {/* CTA Section */}
         <div className="text-center space-y-6">
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <div className="glass-effect rounded-2xl p-8 shadow-sm">
             <h3 className="text-xl font-semibold text-foreground mb-4">
-              Quer receber as dicas da Tia Jow toda semana?
+              Quer receber as dicas jurídicas toda semana?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Siga o Instagram @respirarporjoannabomfim e não perca nenhuma orientação importante 
-              sobre cuidados respiratórios para seu pequeno.
+              Siga o Instagram @mauriciohermann.adv e não perca nenhuma orientação importante 
+              sobre seus direitos e questões jurídicas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 className="gradient-primary text-white hover:opacity-90"
-                onClick={() => handleContactAction('instagram')}
+                onClick={() => window.open('https://instagram.com/mauriciohermann.adv', '_blank')}
               >
                 <Instagram className="w-5 h-5 mr-2" />
                 Seguir no Instagram

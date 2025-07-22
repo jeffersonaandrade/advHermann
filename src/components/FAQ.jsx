@@ -40,14 +40,11 @@ const FAQ = memo(() => {
             </span>
           </div>
           
-          <h2 className="heading-secondary text-2xl sm:text-3xl md:text-4xl">
-            Tire suas{' '}
-            <span className="text-primary">dúvidas</span>
-          </h2>
+
           
           <p className="text-body text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
-            Encontre respostas para as perguntas mais comuns sobre o atendimento, 
-            valores, metodologia e como a fisioterapia respiratória pode ajudar seu filho.
+            Encontre respostas para as perguntas mais comuns sobre orientação jurídica, 
+            áreas de atuação e como podemos ajudar com suas questões legais.
           </p>
         </div>
 
@@ -99,23 +96,22 @@ const FAQ = memo(() => {
               Ainda tem dúvidas?
             </h3>
             <p className="text-muted-foreground mb-4 sm:mb-6 max-w-md mx-auto text-sm sm:text-base">
-              Entre em contato diretamente com a Tia Jow pelo WhatsApp. 
-              Ela terá prazer em esclarecer todas as suas questões.
+              Entre em contato para esclarecer suas dúvidas sobre orientação jurídica.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <button 
                 className="px-4 sm:px-6 py-2.5 sm:py-3 gradient-primary text-white rounded-lg hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm sm:text-base"
-                onClick={() => handleWhatsAppClick('respiratoryQuestions')}
-                aria-label="Falar com a Tia Jow pelo WhatsApp"
+                onClick={() => handleWhatsAppClick('questions')}
+                aria-label="Falar com o Dr. Maurício Hermann pelo WhatsApp"
               >
-                Falar com a Tia Jow
+                Falar com o Dr. Maurício
               </button>
               <button 
                 className="px-4 sm:px-6 py-2.5 sm:py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm sm:text-base"
-                onClick={() => window.open('https://calendly.com/ronaldocinebox1/30min', '_blank')}
-                aria-label="Agendar consulta pelo Calendly"
+                onClick={() => window.open('https://calendly.com/mauriciohermann/30min', '_blank')}
+                aria-label="Agendar orientação pelo Calendly"
               >
-                Agendar Consulta
+                Agendar Orientação
               </button>
             </div>
           </div>

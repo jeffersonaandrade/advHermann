@@ -1,18 +1,18 @@
 // Mensagens do WhatsApp
 export const WHATSAPP_MESSAGES = {
-  schedule: "Olá! Gostaria de agendar uma consulta com a Joanna.",
-  scheduleChild: "Olá! Gostaria de agendar uma consulta com a Joanna para meu filho.",
-  hero: "Olá! Vi o site da Tia Jow e gostaria de falar sobre fisioterapia respiratória para meu filho.",
-  questions: "Olá! Tenho algumas dúvidas sobre o atendimento.",
-  respiratoryQuestions: "Olá! Tenho algumas dúvidas sobre o atendimento de fisioterapia respiratória.",
-  testimonials: "Olá! Vi os depoimentos e gostaria de agendar uma consulta para meu filho.",
-  videos: "Olá! Gostaria de receber mais informações sobre os vídeos e dicas.",
-  courses: "Olá! Gostaria de receber informações sobre novos cursos.",
-  courseInfo: (courseTitle) => `Olá! Gostaria de mais informações sobre o curso "${courseTitle}".`,
-  courseEnrollment: (courseTitle) => `Olá! Gostaria de me inscrever no curso "${courseTitle}".`,
-  contact: "Olá! Gostaria de falar com a Tia Jow.",
-  consultation: "Olá! Gostaria de mais informações sobre a consulta.",
-  float: "Olá! Gostaria de falar com a Tia Jow."
+  schedule: "Olá! Gostaria de agendar uma orientação jurídica com o Dr. Maurício Hermann.",
+  scheduleLegal: "Olá! Gostaria de agendar uma orientação jurídica.",
+  hero: "Olá! Vi o site do Dr. Maurício Hermann e gostaria de falar sobre uma questão jurídica.",
+  questions: "Olá! Tenho algumas dúvidas sobre orientação jurídica.",
+  legalQuestions: "Olá! Tenho algumas dúvidas sobre direito civil/trabalhista/empresarial.",
+  testimonials: "Olá! Gostaria de agendar uma orientação jurídica.",
+  videos: "Olá! Gostaria de receber mais informações sobre orientação jurídica.",
+  courses: "Olá! Gostaria de receber informações sobre palestras jurídicas.",
+  courseInfo: (courseTitle) => `Olá! Gostaria de mais informações sobre "${courseTitle}".`,
+  courseEnrollment: (courseTitle) => `Olá! Gostaria de me inscrever em "${courseTitle}".`,
+  contact: "Olá! Gostaria de falar com o Dr. Maurício Hermann.",
+  consultation: "Olá! Gostaria de mais informações sobre orientação jurídica.",
+  float: "Olá! Gostaria de falar com o Dr. Maurício Hermann."
 };
 
 // Mensagens de erro
@@ -33,8 +33,8 @@ export const SUCCESS_MESSAGES = {
 // Textos de interface
 export const UI_TEXTS = {
   buttons: {
-    schedule: "Agendar Consulta",
-    contact: "Falar com a Tia Jow",
+    schedule: "Agendar Orientação",
+    contact: "Falar com o Dr. Maurício",
     follow: "Seguir no Instagram",
     moreInfo: "Mais Informações",
     enroll: "Inscrever-se",
@@ -54,8 +54,8 @@ export const UI_TEXTS = {
   aria: {
     menuOpen: "Abrir menu",
     menuClose: "Fechar menu",
-    whatsapp: "Falar com a Tia Jow pelo WhatsApp",
-    calendly: "Agendar consulta pelo Calendly",
+    whatsapp: "Falar com o Dr. Maurício Hermann pelo WhatsApp",
+    calendly: "Agendar orientação pelo Calendly",
     instagram: "Seguir no Instagram",
     email: "Enviar email"
   }

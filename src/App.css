@@ -42,73 +42,73 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  /* Paleta de cores inspirada no Instagram da Joanna Bomfim */
-  --background: #fefefe;
-  --foreground: #2d2d2d;
-  --card: #ffffff;
-  --card-foreground: #2d2d2d;
-  --popover: #ffffff;
-  --popover-foreground: #2d2d2d;
-  --primary: #e91e63; /* Rosa principal */
-  --primary-foreground: #ffffff;
-  --secondary: #fce4ec; /* Rosa claro */
-  --secondary-foreground: #2d2d2d;
-  --muted: #f5f5f5;
-  --muted-foreground: #6b7280;
-  --accent: #ff9800; /* Laranja/coral */
+  --radius: 0.5rem;
+  /* Paleta de cores inspirada em sites de advocacia profissionais */
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --card: #1a1a1a;
+  --card-foreground: #ffffff;
+  --popover: #1a1a1a;
+  --popover-foreground: #ffffff;
+  --primary: #d4af37; /* Dourado profissional */
+  --primary-foreground: #0a0a0a;
+  --secondary: #2a2a2a; /* Cinza escuro */
+  --secondary-foreground: #ffffff;
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+  --accent: #8b4513; /* Marrom escuro */
   --accent-foreground: #ffffff;
-  --destructive: #ef4444;
-  --border: #e5e7eb;
-  --input: #f3f4f6;
-  --ring: #e91e63;
-  --chart-1: #e91e63;
-  --chart-2: #ff9800;
-  --chart-3: #4caf50;
-  --chart-4: #2196f3;
-  --chart-5: #9c27b0;
-  --sidebar: #fefefe;
-  --sidebar-foreground: #2d2d2d;
-  --sidebar-primary: #e91e63;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #fce4ec;
-  --sidebar-accent-foreground: #2d2d2d;
-  --sidebar-border: #e5e7eb;
-  --sidebar-ring: #e91e63;
+  --destructive: #dc2626;
+  --border: #333333;
+  --input: #2a2a2a;
+  --ring: #d4af37;
+  --chart-1: #d4af37;
+  --chart-2: #8b4513;
+  --chart-3: #2a2a2a;
+  --chart-4: #4a4a4a;
+  --chart-5: #6a6a6a;
+  --sidebar: #0a0a0a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #d4af37;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #333333;
+  --sidebar-ring: #d4af37;
 }
 
 .dark {
-  --background: #1a1a1a;
+  --background: #0a0a0a;
   --foreground: #ffffff;
-  --card: #2d2d2d;
+  --card: #1a1a1a;
   --card-foreground: #ffffff;
-  --popover: #2d2d2d;
+  --popover: #1a1a1a;
   --popover-foreground: #ffffff;
-  --primary: #f48fb1;
-  --primary-foreground: #1a1a1a;
-  --secondary: #424242;
+  --primary: #d4af37;
+  --primary-foreground: #0a0a0a;
+  --secondary: #2a2a2a;
   --secondary-foreground: #ffffff;
-  --muted: #424242;
-  --muted-foreground: #9ca3af;
-  --accent: #ffb74d;
-  --accent-foreground: #1a1a1a;
-  --destructive: #ef4444;
-  --border: #374151;
-  --input: #374151;
-  --ring: #f48fb1;
-  --chart-1: #f48fb1;
-  --chart-2: #ffb74d;
-  --chart-3: #81c784;
-  --chart-4: #64b5f6;
-  --chart-5: #ba68c8;
-  --sidebar: #1a1a1a;
+  --muted: #2a2a2a;
+  --muted-foreground: #a0a0a0;
+  --accent: #8b4513;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --border: #333333;
+  --input: #2a2a2a;
+  --ring: #d4af37;
+  --chart-1: #d4af37;
+  --chart-2: #8b4513;
+  --chart-3: #2a2a2a;
+  --chart-4: #4a4a4a;
+  --chart-5: #6a6a6a;
+  --sidebar: #0a0a0a;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #f48fb1;
-  --sidebar-primary-foreground: #1a1a1a;
-  --sidebar-accent: #424242;
+  --sidebar-primary: #d4af37;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #2a2a2a;
   --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #374151;
-  --sidebar-ring: #f48fb1;
+  --sidebar-border: #333333;
+  --sidebar-ring: #d4af37;
 }
 
 @layer base {
@@ -120,13 +120,17 @@
   }
 }
 
-/* Gradientes personalizados */
+/* Gradientes personalizados para advocacia */
 .gradient-primary {
-  background: linear-gradient(135deg, #e91e63 0%, #ff9800 100%);
+  background: linear-gradient(135deg, #d4af37 0%, #8b4513 100%);
 }
 
 .gradient-soft {
-  background: linear-gradient(135deg, #fce4ec 0%, #fff3e0 100%);
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #b8860b 50%, #8b4513 100%);
 }
 
 /* Animações suaves */
@@ -187,10 +191,10 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(135deg, #006bff 0%, #0056cc 100%);
+  background: linear-gradient(135deg, #d4af37 0%, #8b4513 100%);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 107, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
   z-index: 1000;
@@ -215,7 +219,7 @@
 
 .calendly-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0, 107, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
   border-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -235,4 +239,23 @@
 
 .text-body {
   @apply text-base md:text-lg text-muted-foreground leading-relaxed;
+}
+
+/* Efeitos especiais para advocacia */
+.glass-effect {
+  background: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.gold-border {
+  border: 2px solid #d4af37;
+}
+
+.gold-text {
+  color: #d4af37;
+}
+
+.gold-bg {
+  background-color: #d4af37;
 }

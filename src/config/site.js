@@ -1,75 +1,74 @@
 export const siteConfig = {
   // Informações básicas
-  name: "Respirar",
-  title: "Respirar - Fisioterapia Respiratória Infantil | Joanna Bomfim | Recife",
-  description: "Fisioterapia respiratória infantil com atendimento domiciliar em Recife. Especialista em problemas respiratórios em crianças. Agende sua consulta com a Tia Jow.",
-  keywords: "fisioterapia respiratória, fisioterapia infantil, atendimento domiciliar, Joanna Bomfim, cuidado respiratório, Recife, problemas respiratórios crianças, bronquite infantil, asma infantil, fisioterapeuta respiratória, Tia Jow, fisioterapia domiciliar Recife",
+  name: "Maurício Hermann",
+  title: "Maurício Hermann - Advogado | Advocacia Especializada | Recife",
+  description: "Advocacia especializada com foco em direito civil, trabalhista e empresarial. Atendimento personalizado e soluções jurídicas eficazes. Consulte o Dr. Maurício Hermann.",
+  keywords: "advogado, advocacia, direito civil, direito trabalhista, direito empresarial, Maurício Hermann, consultoria jurídica, processo judicial, Recife, advogado especializado",
   
   // SEO Avançado
   seo: {
-    title: "Fisioterapia Respiratória Infantil Recife | Joanna Bomfim - Atendimento Domiciliar",
-    description: "Especialista em fisioterapia respiratória infantil em Recife. Atendimento domiciliar para crianças com problemas respiratórios. Agende com a Tia Jow.",
+    title: "Advogado Maurício Hermann | Advocacia Especializada em Recife",
+    description: "Advocacia especializada em direito civil, trabalhista e empresarial. Dr. Maurício Hermann oferece consultoria jurídica personalizada e soluções eficazes.",
     keywords: [
-      "fisioterapia respiratória infantil",
-      "fisioterapeuta respiratória Recife", 
-      "atendimento domiciliar fisioterapia",
-      "problemas respiratórios crianças",
-      "bronquite infantil tratamento",
-      "asma infantil fisioterapia",
-      "Joanna Bomfim fisioterapeuta",
-      "Tia Jow fisioterapia",
-      "fisioterapia domiciliar Recife",
-      "respiração infantil",
-      "fisioterapia pediátrica",
-      "tratamento respiratório crianças"
+      "advogado Recife",
+      "advocacia especializada", 
+      "direito civil",
+      "direito trabalhista",
+      "direito empresarial",
+      "consultoria jurídica",
+      "processo judicial",
+      "Maurício Hermann advogado",
+      "advocacia Recife",
+      "advogado especializado",
+      "soluções jurídicas",
+      "assessoria jurídica"
     ],
     localBusiness: {
-      name: "Respirar - Fisioterapia Respiratória Infantil",
+      name: "Dr. Maurício Hermann - Advocacia",
       address: "Recife, Pernambuco, Brasil",
-      phone: "+5511999999999",
-      email: "contato@respirarjoanna.com",
-      website: "https://respirarjoanna.com",
+      phone: "+5581999999999",
+      email: "contato@mauriciohermann.com",
+      website: "https://mauriciohermann.com",
       latitude: "-8.0476",
       longitude: "-34.8770",
       serviceArea: "Recife e Região Metropolitana",
-      businessHours: "Segunda a Sexta, 8h às 18h"
+      businessHours: "Segunda a Sexta, 9h às 18h"
     }
   },
   
   // Contato
   contact: {
-    whatsapp: "5511999999999",
-    whatsappFormatted: "(11) 99999-9999",
-    instagram: "@respirarporjoannabomfim",
-    instagramUrl: "https://instagram.com/respirarporjoannabomfim",
-    email: "contato@respirarjoanna.com",
-    address: "Recife e Região Metropolitana",
-    schedule: "Segunda a Sexta, 8h às 18h",
-    consultationPrice: "R$ 280,00",
-    consultationDuration: "45 a 60 minutos por sessão",
+    whatsapp: "5581999999999",
+    whatsappFormatted: "(81) 99999-9999",
+    instagram: "@mauriciohermann.adv",
+    instagramUrl: "https://instagram.com/mauriciohermann.adv",
+    email: "contato@mauriciohermann.com",
+    address: "Recife, PE",
+    schedule: "Segunda a Sexta, 9h às 18h",
     serviceArea: "Recife e Região Metropolitana"
   },
   
   // URLs
   urls: {
-    whatsapp: "https://wa.me/5511999999999",
-    instagram: "https://instagram.com/respirarporjoannabomfim",
-    email: "contato@respirarjoanna.com",
-    calendly: "https://calendly.com/ronaldocinebox1/30min"
+    whatsapp: "https://wa.me/5581999999999",
+    instagram: "https://instagram.com/mauriciohermann.adv",
+    email: "contato@mauriciohermann.com",
+    calendly: "https://calendly.com/mauriciohermann/30min"
   },
   
   // Mensagens de WhatsApp (importadas de messages.js)
   whatsappMessages: {
-    schedule: "Olá! Gostaria de agendar uma consulta com a Joanna.",
-    scheduleChild: "Olá! Gostaria de agendar uma consulta com a Joanna para meu filho.",
-    hero: "Olá! Vi o site da Tia Jow e gostaria de falar sobre fisioterapia respiratória para meu filho.",
-    questions: "Olá! Tenho algumas dúvidas sobre o atendimento.",
-    respiratoryQuestions: "Olá! Tenho algumas dúvidas sobre o atendimento de fisioterapia respiratória.",
-    testimonials: "Olá! Vi os depoimentos e gostaria de agendar uma consulta para meu filho.",
-    videos: "Olá! Gostaria de receber mais informações sobre os vídeos e dicas.",
-    courses: "Olá! Gostaria de receber informações sobre novos cursos.",
-    courseInfo: (courseTitle) => `Olá! Gostaria de mais informações sobre o curso "${courseTitle}".`,
-    courseEnrollment: (courseTitle) => `Olá! Gostaria de me inscrever no curso "${courseTitle}".`
+    schedule: "Olá! Gostaria de agendar uma orientação jurídica com o Dr. Maurício Hermann.",
+    scheduleLegal: "Olá! Gostaria de agendar uma orientação jurídica.",
+    hero: "Olá! Vi o site do Dr. Maurício Hermann e gostaria de falar sobre uma questão jurídica.",
+    questions: "Olá! Tenho algumas dúvidas sobre orientação jurídica.",
+    legalQuestions: "Olá! Tenho algumas dúvidas sobre direito civil/trabalhista/empresarial.",
+    testimonials: "Olá! Gostaria de agendar uma orientação jurídica.",
+    videos: "Olá! Gostaria de receber mais informações sobre orientação jurídica.",
+    courses: "Olá! Gostaria de receber informações sobre palestras jurídicas.",
+    courseInfo: (courseTitle) => `Olá! Gostaria de mais informações sobre "${courseTitle}".`,
+    courseEnrollment: (courseTitle) => `Olá! Gostaria de me inscrever em "${courseTitle}".`,
+    contact: "Olá! Gostaria de falar com o Dr. Maurício Hermann."
   },
   
   // Estatísticas
@@ -85,28 +84,26 @@ export const siteConfig = {
     { label: 'Sobre', href: '#about' },
     { label: 'Dicas em Vídeo', href: '#videos' },
     { label: 'Cursos', href: '#courses' },
-    { label: 'Depoimentos', href: '#testimonials' },
+    { label: 'Informações Jurídicas', href: '#testimonials' },
     { label: 'FAQ', href: '#faq' },
     { label: 'Contato', href: '#contact' }
   ],
   
   // Indicadores de confiança
   trustIndicators: [
-    "Atendimento domiciliar",
-    "Cuidado humanizado"
+    "Advocacia especializada"
   ],
   
   // Informações de consulta
   consultation: {
-    duration: "45 a 60 minutos por sessão",
+    duration: "30 minutos",
     area: "Recife e Região Metropolitana",
     scheduling: "Agendamento via WhatsApp",
     benefits: [
-      "Atendimento domiciliar",
-      "Avaliação completa",
-      "Técnicas personalizadas",
-      "Orientação para pais",
-      "Acompanhamento"
+      "Análise detalhada do caso",
+      "Estratégia personalizada",
+      "Acompanhamento completo",
+      "Transparência total"
     ]
   },
   
@@ -115,7 +112,7 @@ export const siteConfig = {
     {
       icon: "Phone",
       title: 'WhatsApp',
-      content: '(11) 99999-9999',
+      content: '(81) 99999-9999',
       description: 'Atendimento de segunda a sexta',
       action: 'whatsapp',
       messageType: 'schedule'
@@ -123,22 +120,22 @@ export const siteConfig = {
     {
       icon: "Instagram", 
       title: 'Instagram',
-      content: '@respirarporjoannabomfim',
-      description: 'Dicas semanais e conteúdo educativo',
+      content: '@mauriciohermann.adv',
+      description: 'Dicas jurídicas e orientações',
       action: 'instagram'
     },
     {
       icon: "MapPin",
-      title: 'Atendimento',
-      content: 'Domiciliar',
-      description: 'Recife e Região Metropolitana',
+      title: 'Escritório',
+      content: 'Recife, PE',
+      description: 'Atendimento presencial e online',
       action: null
     },
     {
       icon: "Clock",
       title: 'Horários',
       content: 'Segunda a Sexta',
-      description: '8h às 18h',
+      description: '9h às 18h',
       action: null
     }
   ]

@@ -2,55 +2,55 @@ export const testimonialsData = [
   {
     id: 1,
     name: "Maria Silva",
-    childName: "Pedro, 3 anos",
-    content: "A Tia Jow transformou a vida do meu filho! Ele tinha bronquite recorrente e hoje respira muito melhor. O atendimento é incrível, ela tem uma paciência infinita e sabe exatamente como lidar com cada criança.",
+    caseType: "Direito Trabalhista",
+    content: "O Dr. Maurício Hermann foi fundamental para resolver meu caso de assédio moral no trabalho. Profissionalismo e dedicação em cada etapa do processo. Recomendo para todos que precisam de um advogado de confiança.",
     rating: 5,
-    condition: "Bronquite recorrente",
+    result: "Indenização de R$ 50.000,00",
     image: "/testimonials/maria-silva.jpg"
   },
   {
     id: 2,
-    name: "Ana Costa",
-    childName: "Sofia, 2 anos",
-    content: "Minha filha era muito medrosa com tratamentos médicos. A Joanna conseguiu criar um vínculo incrível com ela. Hoje a Sofia adora quando a Tia Jow vem em casa. Os resultados foram surpreendentes!",
+    name: "João Santos",
+    caseType: "Direito Civil",
+    content: "Contratei o Dr. Maurício Hermann para uma questão de responsabilidade civil. Ele foi transparente desde o início e conseguiu um excelente resultado. Atendimento personalizado e eficiente.",
     rating: 5,
-    condition: "Problemas respiratórios pós-cirúrgicos",
-    image: "/testimonials/ana-costa.jpg"
+    result: "Compensação integral dos danos",
+    image: "/testimonials/joao-santos.jpg"
   },
   {
     id: 3,
-    name: "Carlos Santos",
-    childName: "Lucas, 4 anos",
-    content: "Como pai, eu ficava muito preocupado com a respiração do Lucas. A Joanna não só tratou o problema, mas também me ensinou como ajudar em casa. Profissionalismo e carinho em cada sessão.",
+    name: "Ana Costa",
+    caseType: "Direito Empresarial",
+    content: "Como empresária, precisava de orientação jurídica para constituir minha empresa. O Dr. Maurício Hermann me orientou perfeitamente e hoje tenho minha empresa funcionando com toda segurança jurídica.",
     rating: 5,
-    condition: "Asma infantil",
-    image: "/testimonials/carlos-santos.jpg"
+    result: "Constituição empresarial completa",
+    image: "/testimonials/ana-costa.jpg"
   },
   {
     id: 4,
-    name: "Juliana Lima",
-    childName: "Isabella, 1 ano",
-    content: "Minha bebê era prematura e tinha muitas secreções. A Tia Jow foi fundamental para o desenvolvimento respiratório dela. O atendimento domiciliar fez toda a diferença para nossa família.",
+    name: "Carlos Oliveira",
+    caseType: "Direito Previdenciário",
+    content: "O Dr. Maurício Hermann me ajudou com minha aposentadoria. O processo estava parado há anos e ele conseguiu resolver em poucos meses. Profissional competente e dedicado.",
     rating: 5,
-    condition: "Prematuridade e secreções",
-    image: "/testimonials/juliana-lima.jpg"
+    result: "Aposentadoria aprovada",
+    image: "/testimonials/carlos-oliveira.jpg"
   },
   {
     id: 5,
-    name: "Roberto Almeida",
-    childName: "Gabriel, 5 anos",
-    content: "O Gabriel tinha pneumonia recorrente e sempre ficava internado. Desde que começamos com a Joanna, ele não teve mais internações. Ela é uma profissional excepcional!",
+    name: "Fernanda Lima",
+    caseType: "Direito Trabalhista",
+    content: "Fui demitida sem justa causa e o Dr. Maurício Hermann conseguiu uma excelente indenização para mim. O atendimento foi humanizado e ele explicou cada etapa do processo.",
     rating: 5,
-    condition: "Pneumonia recorrente",
-    image: "/testimonials/roberto-almeida.jpg"
+    result: "Indenização de R$ 35.000,00",
+    image: "/testimonials/fernanda-lima.jpg"
   },
   {
     id: 6,
-    name: "Fernanda Oliveira",
-    childName: "Rafael, 2 anos",
-    content: "A Tia Jow é simplesmente incrível! Ela entende cada criança como indivíduo único. O Rafael melhorou muito e hoje dorme tranquilo. Recomendo para todas as mães!",
+    name: "Roberto Almeida",
+    caseType: "Direito Civil",
+    content: "Tinha um problema complexo com contratos e o Dr. Maurício Hermann resolveu tudo com maestria. Sua experiência e conhecimento técnico fizeram toda a diferença no resultado.",
     rating: 5,
-    condition: "Dificuldades respiratórias noturnas",
-    image: "/testimonials/fernanda-oliveira.jpg"
+    result: "Resolução favorável do contrato",
+    image: "/testimonials/roberto-almeida.jpg"
   }
 ]; 
