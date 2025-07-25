@@ -11,13 +11,13 @@ const Hero = () => {
   const { elementRef, hasIntersected } = useIntersectionObserver();
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-primary/10"></div>
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Conteúdo */}
           <div className="text-center lg:text-left space-y-8">
             {/* Main Heading */}
@@ -76,9 +76,9 @@ const Hero = () => {
 
           {/* Imagem do Dr. Maurício Hermann */}
           <div className="relative animate-fade-in hidden lg:block">
-            <div className="relative">
+            <div className="relative max-w-md mx-auto">
               {/* Foto do Maurício */}
-              <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20">
+              <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 shadow-2xl">
                 <img 
                   src={mauricioPhoto} 
                   alt="Dr. Maurício Hermann Hermann - Advogado Especializado"
